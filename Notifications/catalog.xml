@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="system">
+    <system systemId="file:/home/claudia/Dropbox/Universidade/Mestrado/Ano06/EngenhariaServicos/sms-pack-WSDL-Contract/OneAPI_SMS_SendSMS/OneAPI_SMS_SendSMS.wsdl" uri="src/conf/xml-resources/web-service-references/OneAPI_SMS_SendSMS/wsdl/OneAPI_SMS_SendSMS.wsdl"/>
+    <system systemId="file:/home/claudia/Dropbox/Universidade/Mestrado/Ano06/EngenhariaServicos/sms-pack-WSDL-Contract/OneAPI_SMS_SendSMS/esbCredentials.xsd" uri="src/conf/xml-resources/web-service-references/OneAPI_SMS_SendSMS/wsdl/esbCredentials.xsd"/>
+    <system systemId="file:/home/claudia/Dropbox/Universidade/Mestrado/Ano06/EngenhariaServicos/sms-pack-WSDL-Contract/OneAPI_SMS_SendSMS/Market.xsd" uri="src/conf/xml-resources/web-service-references/OneAPI_SMS_SendSMS/wsdl/Market.xsd"/>
+    <system systemId="file:/home/claudia/Dropbox/Universidade/Mestrado/Ano06/EngenhariaServicos/sms-pack-WSDL-Contract/OneAPI_SMS_SendSMS/OneAPI_pxprof_common_types.xsd" uri="src/conf/xml-resources/web-service-references/OneAPI_SMS_SendSMS/wsdl/OneAPI_pxprof_common_types.xsd"/>
+    <system systemId="file:/home/claudia/Dropbox/Universidade/Mestrado/Ano06/EngenhariaServicos/sms-pack-WSDL-Contract/OneAPI_SMS_SendSMS/OneAPI_SMS_pxprof_sms_types.xsd" uri="src/conf/xml-resources/web-service-references/OneAPI_SMS_SendSMS/wsdl/OneAPI_SMS_pxprof_sms_types.xsd"/>
+    <system systemId="file:/home/claudia/Dropbox/Universidade/Mestrado/Ano06/EngenhariaServicos/sms-pack-WSDL-Contract/OneAPI_SMS_Notification/OneAPI_SMS_Notification.wsdl" uri="src/conf/xml-resources/web-service-references/OneAPI_SMS_Notification/wsdl/OneAPI_SMS_Notification.wsdl"/>
+    <system systemId="file:/home/claudia/Dropbox/Universidade/Mestrado/Ano06/EngenhariaServicos/sms-pack-WSDL-Contract/OneAPI_SMS_Notification/esbCredentials.xsd" uri="src/conf/xml-resources/web-service-references/OneAPI_SMS_Notification/wsdl/esbCredentials.xsd"/>
+    <system systemId="file:/home/claudia/Dropbox/Universidade/Mestrado/Ano06/EngenhariaServicos/sms-pack-WSDL-Contract/OneAPI_SMS_Notification/Market.xsd" uri="src/conf/xml-resources/web-service-references/OneAPI_SMS_Notification/wsdl/Market.xsd"/>
+    <system systemId="file:/home/claudia/Dropbox/Universidade/Mestrado/Ano06/EngenhariaServicos/sms-pack-WSDL-Contract/OneAPI_SMS_Notification/OneAPI_SMS_pxprof_sms_types.xsd" uri="src/conf/xml-resources/web-service-references/OneAPI_SMS_Notification/wsdl/OneAPI_SMS_pxprof_sms_types.xsd"/>
+</catalog>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".ActivityWelcome$DummySectionFragment" >
+    
+	<LinearLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="vertical"
+	    android:layout_centerInParent="true" >
+	    
+	    <TextView
+	        android:id="@+id/tvWarning"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:gravity="center"
+	        android:textSize="32sp"
+	        android:layout_centerInParent="true"
+	        android:text="Será encamihado para uma página web onde deverá efetuar o login" />
+	    
+<!-- 	      <Button -->
+<!-- 		    android:id="@+id/Button03" -->
+<!-- 		    android:layout_width="match_parent" -->
+<!-- 		    android:layout_height="wrap_content" -->
+<!-- 		    android:text="OK" -->
+<!-- 		    android:layout_centerHorizontal="true" -->
+<!-- 		    android:layout_below="@id/tvWarning" -->
+<!-- 		    android:layout_marginTop="30dip" -->
+<!-- 		    android:textSize="30sp" android:textStyle="bold" -->
+<!-- 		    android:onClick="onClickButtonSeguinte" /> -->
+	
+	</LinearLayout>
+
+</RelativeLayout>

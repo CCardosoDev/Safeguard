@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="system">
+    <system systemId="http://localhost:8080/NotificationsService/NotificationsServiceImp?wsdl" uri="src/conf/xml-resources/web-service-references/NotificationsServiceImp/wsdl/localhost_8080/NotificationsService/NotificationsServiceImp.wsdl"/>
+    <system systemId="http://localhost:8080/NotificationsService/NotificationsServiceImp?xsd=1" uri="src/conf/xml-resources/web-service-references/NotificationsServiceImp/wsdl/localhost_8080/NotificationsService/NotificationsServiceImp.xsd_1.xsd"/>
+    <system systemId="http://localhost:8080/NotificationsService/NotificationsServiceImp?xsd=2" uri="src/conf/xml-resources/web-service-references/NotificationsServiceImp/wsdl/localhost_8080/NotificationsService/NotificationsServiceImp.xsd_2.xsd"/>
+    <system systemId="http://192.168.8.217:7705/GeoreferencingService/Georeferencing?wsdl" uri="src/conf/xml-resources/web-service-references/Georeferencing/wsdl/192.168.8.217_7705/GeoreferencingService/Georeferencing.wsdl"/>
+    <system systemId="http://192.168.8.217:7705/GeoreferencingService/Georeferencing?xsd=1" uri="src/conf/xml-resources/web-service-references/Georeferencing/wsdl/192.168.8.217_7705/GeoreferencingService/Georeferencing.xsd_1.xsd"/>
+    <system systemId="https://192.168.8.217:7706/GeoreferencingService/Georeferencing?wsdl" uri="src/conf/xml-resources/web-service-references/Georeferencing/wsdl/192.168.8.217_7706/GeoreferencingService/Georeferencing.wsdl"/>
+    <system systemId="https://192.168.8.217:7706/GeoreferencingService/Georeferencing?xsd=1" uri="src/conf/xml-resources/web-service-references/Georeferencing/wsdl/192.168.8.217_7706/GeoreferencingService/Georeferencing.xsd_1.xsd"/>
+    <system systemId="http://safeguardtracking.no-ip.org:8080/NotificationsService/NotificationsServiceImp?wsdl" uri="src/conf/xml-resources/web-service-references/NotificationsServiceImp/wsdl/safeguardtracking.no-ip.org_8080/NotificationsService/NotificationsServiceImp.wsdl"/>
+    <system systemId="http://safeguardtracking.no-ip.org:8080/NotificationsService/NotificationsServiceImp?xsd=1" uri="src/conf/xml-resources/web-service-references/NotificationsServiceImp/wsdl/safeguardtracking.no-ip.org_8080/NotificationsService/NotificationsServiceImp.xsd_1.xsd"/>
+    <system systemId="http://safeguardtracking.no-ip.org:8080/NotificationsService/NotificationsServiceImp?xsd=2" uri="src/conf/xml-resources/web-service-references/NotificationsServiceImp/wsdl/safeguardtracking.no-ip.org_8080/NotificationsService/NotificationsServiceImp.xsd_2.xsd"/>
+</catalog>

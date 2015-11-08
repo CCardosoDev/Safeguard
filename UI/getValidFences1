@@ -1,0 +1,1523 @@
+calendarToken :WeS4aFc6xFQS2Ngxf22xv9
+geoRefToken :5g8mDwjvN6bvfcBwZ93CoV
+validEvents :Array
+(
+    [0] => Array
+        (
+            [description] => asda
+            [dtstart] => Array
+                (
+                    [day] => 03
+                    [hour] => 14
+                    [minute] => 56
+                    [month] => 12
+                    [second] => 00
+                    [timezone] => WET
+                    [year] => 2013
+                )
+
+            [duration] => Array
+                (
+                    [day] => 0
+                    [hour] => 14
+                    [minute] => 56
+                    [week] => 0
+                )
+
+            [location] => 69
+            [rrule] => Array
+                (
+                    [byday] => MO,FR
+                    [count] => 2
+                    [freq] => DAILY
+                    [interval] => 1
+                )
+
+            [summary] => asddd
+            [uid] => 20131203T150521Z-87130@safeguard
+        )
+
+)
+
+fences :Array
+(
+    [0] => stdClass Object
+        (
+            [coordinates] => Array
+                (
+                    [0] => stdClass Object
+                        (
+                            [latitude] => 41.356195534389
+                            [longitude] => -10.168619155884
+                        )
+
+                    [1] => stdClass Object
+                        (
+                            [latitude] => 39.989747184046
+                            [longitude] => -8.0098056793213
+                        )
+
+                    [2] => stdClass Object
+                        (
+                            [latitude] => 41.224117530583
+                            [longitude] => -6.9770908355713
+                        )
+
+                    [3] => stdClass Object
+                        (
+                            [latitude] => 41.533254142813
+                            [longitude] => -8.8502597808838
+                        )
+
+                    [4] => stdClass Object
+                        (
+                            [latitude] => 41.488006071854
+                            [longitude] => -9.8225498199463
+                        )
+
+                    [5] => stdClass Object
+                        (
+                            [latitude] => 41.356195534389
+                            [longitude] => -10.168619155884
+                        )
+
+                )
+
+            [created] => 2013-12-02 00:07:02.998625
+            [id] => 6
+            [modified] => 2013-12-02 00:07:02.998633
+        )
+
+    [1] => stdClass Object
+        (
+            [coordinates] => Array
+                (
+                    [0] => stdClass Object
+                        (
+                            [latitude] => 39.922375763859
+                            [longitude] => -8.1031894683838
+                        )
+
+                    [1] => stdClass Object
+                        (
+                            [latitude] => 40.233411907115
+                            [longitude] => -7.2078037261963
+                        )
+
+                    [2] => stdClass Object
+                        (
+                            [latitude] => 41.170384477816
+                            [longitude] => -10.141925811768
+                        )
+
+                    [3] => stdClass Object
+                        (
+                            [latitude] => 40.245991504199
+                            [longitude] => -10.460529327393
+                        )
+
+                    [4] => stdClass Object
+                        (
+                            [latitude] => 38.117271658305
+                            [longitude] => -7.7029609680176
+                        )
+
+                    [5] => stdClass Object
+                        (
+                            [latitude] => 39.922375763859
+                            [longitude] => -8.1031894683838
+                        )
+
+                )
+
+            [created] => 2013-12-02 00:12:16.116545
+            [id] => 7
+            [modified] => 2013-12-02 00:12:16.116556
+        )
+
+    [2] => stdClass Object
+        (
+            [coordinates] => Array
+                (
+                    [0] => stdClass Object
+                        (
+                            [latitude] => 40.950862628133
+                            [longitude] => -9.8170566558838
+                        )
+
+                    [1] => stdClass Object
+                        (
+                            [latitude] => 40.308854425638
+                            [longitude] => -9.8555088043213
+                        )
+
+                    [2] => stdClass Object
+                        (
+                            [latitude] => 40.178873314347
+                            [longitude] => -7.8395175933838
+                        )
+
+                    [3] => stdClass Object
+                        (
+                            [latitude] => 41.244772343082
+                            [longitude] => -7.5703525543213
+                        )
+
+                    [4] => stdClass Object
+                        (
+                            [latitude] => 41.281934557995
+                            [longitude] => -8.7019443511963
+                        )
+
+                    [5] => stdClass Object
+                        (
+                            [latitude] => 40.609782379833
+                            [longitude] => -9.2952060699463
+                        )
+
+                    [6] => stdClass Object
+                        (
+                            [latitude] => 41.004775422229
+                            [longitude] => -9.7071933746338
+                        )
+
+                    [7] => stdClass Object
+                        (
+                            [latitude] => 40.950862628133
+                            [longitude] => -9.8170566558838
+                        )
+
+                )
+
+            [created] => 2013-12-02 00:13:03.173548
+            [id] => 8
+            [modified] => 2013-12-02 00:13:03.173553
+        )
+
+    [3] => stdClass Object
+        (
+            [coordinates] => Array
+                (
+                    [0] => stdClass Object
+                        (
+                            [latitude] => 39.884450178234
+                            [longitude] => -8.0647373199463
+                        )
+
+                    [1] => stdClass Object
+                        (
+                            [latitude] => 40.23760536584
+                            [longitude] => -7.3121738433838
+                        )
+
+                    [2] => stdClass Object
+                        (
+                            [latitude] => 41.228249015185
+                            [longitude] => -8.6305332183838
+                        )
+
+                    [3] => stdClass Object
+                        (
+                            [latitude] => 40.876141411414
+                            [longitude] => -9.4600009918213
+                        )
+
+                    [4] => stdClass Object
+                        (
+                            [latitude] => 39.993955693973
+                            [longitude] => -8.9216709136963
+                        )
+
+                    [5] => stdClass Object
+                        (
+                            [latitude] => 40.174676220563
+                            [longitude] => -8.5975742340088
+                        )
+
+                    [6] => stdClass Object
+                        (
+                            [latitude] => 39.960280354296
+                            [longitude] => -8.2734775543213
+                        )
+
+                    [7] => stdClass Object
+                        (
+                            [latitude] => 39.884450178234
+                            [longitude] => -8.0647373199463
+                        )
+
+                )
+
+            [created] => 2013-12-02 00:13:29.976815
+            [id] => 9
+            [modified] => 2013-12-02 00:13:29.97682
+        )
+
+    [4] => stdClass Object
+        (
+            [coordinates] => Array
+                (
+                    [0] => stdClass Object
+                        (
+                            [latitude] => 41.033787135219
+                            [longitude] => -9.6577548980713
+                        )
+
+                    [1] => stdClass Object
+                        (
+                            [latitude] => 39.95185892663
+                            [longitude] => -9.6797275543213
+                        )
+
+                    [2] => stdClass Object
+                        (
+                            [latitude] => 39.935012960383
+                            [longitude] => -8.0207920074463
+                        )
+
+                    [3] => stdClass Object
+                        (
+                            [latitude] => 40.663972876387
+                            [longitude] => -7.1473789215088
+                        )
+
+                    [4] => stdClass Object
+                        (
+                            [latitude] => 41.20758898181
+                            [longitude] => -7.4220371246338
+                        )
+
+                    [5] => stdClass Object
+                        (
+                            [latitude] => 41.364441530542
+                            [longitude] => -8.3668613433838
+                        )
+
+                    [6] => stdClass Object
+                        (
+                            [latitude] => 41.050359519319
+                            [longitude] => -8.9051914215088
+                        )
+
+                    [7] => stdClass Object
+                        (
+                            [latitude] => 41.265420628927
+                            [longitude] => -9.3556308746338
+                        )
+
+                    [8] => stdClass Object
+                        (
+                            [latitude] => 41.033787135219
+                            [longitude] => -9.6577548980713
+                        )
+
+                )
+
+            [created] => 2013-12-02 00:15:16.717379
+            [id] => 10
+            [modified] => 2013-12-02 00:15:16.717384
+        )
+
+    [5] => stdClass Object
+        (
+            [coordinates] => Array
+                (
+                    [0] => stdClass Object
+                        (
+                            [latitude] => 41.104190944576
+                            [longitude] => -9.7126865386963
+                        )
+
+                    [1] => stdClass Object
+                        (
+                            [latitude] => 39.787433886224
+                            [longitude] => -9.6302890777588
+                        )
+
+                    [2] => stdClass Object
+                        (
+                            [latitude] => 40.876141411414
+                            [longitude] => -7.0649814605713
+                        )
+
+                    [3] => stdClass Object
+                        (
+                            [latitude] => 41.186922422903
+                            [longitude] => -7.2132968902588
+                        )
+
+                    [4] => stdClass Object
+                        (
+                            [latitude] => 41.182788328113
+                            [longitude] => -8.8392734527588
+                        )
+
+                    [5] => stdClass Object
+                        (
+                            [latitude] => 40.321419995934
+                            [longitude] => -9.1908359527588
+                        )
+
+                    [6] => stdClass Object
+                        (
+                            [latitude] => 41.104190944576
+                            [longitude] => -9.7126865386963
+                        )
+
+                )
+
+            [created] => 2013-12-02 10:45:09.663337
+            [id] => 11
+            [modified] => 2013-12-02 10:45:09.663344
+        )
+
+    [6] => stdClass Object
+        (
+            [coordinates] => Array
+                (
+                    [0] => stdClass Object
+                        (
+                            [latitude] => 41.042073848901
+                            [longitude] => -9.4984531402588
+                        )
+
+                    [1] => stdClass Object
+                        (
+                            [latitude] => 40.082274490357
+                            [longitude] => -9.5149326324463
+                        )
+
+                    [2] => stdClass Object
+                        (
+                            [latitude] => 39.884450178234
+                            [longitude] => -7.8999423980713
+                        )
+
+                    [3] => stdClass Object
+                        (
+                            [latitude] => 40.738933241136
+                            [longitude] => -7.1968173980713
+                        )
+
+                    [4] => stdClass Object
+                        (
+                            [latitude] => 41.104190944576
+                            [longitude] => -8.6525058746338
+                        )
+
+                    [5] => stdClass Object
+                        (
+                            [latitude] => 41.240641902695
+                            [longitude] => -8.9546298980713
+                        )
+
+                    [6] => stdClass Object
+                        (
+                            [latitude] => 40.967455873297
+                            [longitude] => -9.1633701324463
+                        )
+
+                    [7] => stdClass Object
+                        (
+                            [latitude] => 41.042073848901
+                            [longitude] => -9.4984531402588
+                        )
+
+                )
+
+            [created] => 2013-12-02 10:54:49.761991
+            [id] => 12
+            [modified] => 2013-12-02 10:54:49.762001
+        )
+
+    [7] => stdClass Object
+        (
+            [coordinates] => Array
+                (
+                    [0] => stdClass Object
+                        (
+                            [latitude] => 40.971603532799
+                            [longitude] => -10.080728530884
+                        )
+
+                    [1] => stdClass Object
+                        (
+                            [latitude] => 39.993955693973
+                            [longitude] => -9.8445224761963
+                        )
+
+                    [2] => stdClass Object
+                        (
+                            [latitude] => 39.981329386272
+                            [longitude] => -8.0427646636963
+                        )
+
+                    [3] => stdClass Object
+                        (
+                            [latitude] => 41.05450196329
+                            [longitude] => -7.2682285308838
+                        )
+
+                    [4] => stdClass Object
+                        (
+                            [latitude] => 41.145569731009
+                            [longitude] => -8.4492588043213
+                        )
+
+                    [5] => stdClass Object
+                        (
+                            [latitude] => 40.530501775743
+                            [longitude] => -9.2732334136963
+                        )
+
+                    [6] => stdClass Object
+                        (
+                            [latitude] => 41.091772220977
+                            [longitude] => -9.5259189605713
+                        )
+
+                    [7] => stdClass Object
+                        (
+                            [latitude] => 40.97989806962
+                            [longitude] => -9.8170566558838
+                        )
+
+                    [8] => stdClass Object
+                        (
+                            [latitude] => 40.971603532799
+                            [longitude] => -10.080728530884
+                        )
+
+                )
+
+            [created] => 2013-12-02 11:00:11.91246
+            [id] => 13
+            [modified] => 2013-12-02 11:00:11.912465
+        )
+
+    [8] => stdClass Object
+        (
+            [coordinates] => Array
+                (
+                    [0] => stdClass Object
+                        (
+                            [latitude] => 40.233411907115
+                            [longitude] => -9.9159336090088
+                        )
+
+                    [1] => stdClass Object
+                        (
+                            [latitude] => 40.501269458416
+                            [longitude] => -7.7351474761963
+                        )
+
+                    [2] => stdClass Object
+                        (
+                            [latitude] => 41.095912056395
+                            [longitude] => -7.6802158355713
+                        )
+
+                    [3] => stdClass Object
+                        (
+                            [latitude] => 41.26129149392
+                            [longitude] => -8.6195468902588
+                        )
+
+                    [4] => stdClass Object
+                        (
+                            [latitude] => 40.601441476454
+                            [longitude] => -9.5533847808838
+                        )
+
+                    [5] => stdClass Object
+                        (
+                            [latitude] => 40.4469470596
+                            [longitude] => -10.003824234009
+                        )
+
+                    [6] => stdClass Object
+                        (
+                            [latitude] => 40.233411907115
+                            [longitude] => -9.9159336090088
+                        )
+
+                )
+
+            [created] => 2013-12-02 11:03:09.512485
+            [id] => 14
+            [modified] => 2013-12-02 11:03:09.51249
+        )
+
+    [9] => stdClass Object
+        (
+            [coordinates] => Array
+                (
+                    [0] => stdClass Object
+                        (
+                            [latitude] => 41.083491767508
+                            [longitude] => -9.8994541168213
+                        )
+
+                    [1] => stdClass Object
+                        (
+                            [latitude] => 40.296286517117
+                            [longitude] => -9.9598789215088
+                        )
+
+                    [2] => stdClass Object
+                        (
+                            [latitude] => 40.031820613337
+                            [longitude] => -8.3393955230713
+                        )
+
+                    [3] => stdClass Object
+                        (
+                            [latitude] => 40.354916750791
+                            [longitude] => -7.2023105621338
+                        )
+
+                    [4] => stdClass Object
+                        (
+                            [latitude] => 41.199323141276
+                            [longitude] => -8.3174228668213
+                        )
+
+                    [5] => stdClass Object
+                        (
+                            [latitude] => 40.905209697274
+                            [longitude] => -8.7623691558838
+                        )
+
+                    [6] => stdClass Object
+                        (
+                            [latitude] => 40.938414956898
+                            [longitude] => -9.1249179840088
+                        )
+
+                    [7] => stdClass Object
+                        (
+                            [latitude] => 41.182788328113
+                            [longitude] => -9.4105625152588
+                        )
+
+                    [8] => stdClass Object
+                        (
+                            [latitude] => 40.917663624581
+                            [longitude] => -9.5643711090088
+                        )
+
+                    [9] => stdClass Object
+                        (
+                            [latitude] => 41.083491767508
+                            [longitude] => -9.8994541168213
+                        )
+
+                )
+
+            [created] => 2013-12-02 11:10:16.100553
+            [id] => 15
+            [modified] => 2013-12-02 11:10:16.100559
+        )
+
+    [10] => stdClass Object
+        (
+            [coordinates] => Array
+                (
+                    [0] => stdClass Object
+                        (
+                            [latitude] => 41.120745590167
+                            [longitude] => -10.108194351196
+                        )
+
+                    [1] => stdClass Object
+                        (
+                            [latitude] => 40.204050425113
+                            [longitude] => -10.695962905884
+                        )
+
+                    [2] => stdClass Object
+                        (
+                            [latitude] => 40.859525228993
+                            [longitude] => -10.882730484009
+                        )
+
+                    [3] => stdClass Object
+                        (
+                            [latitude] => 41.430371882653
+                            [longitude] => -10.723428726196
+                        )
+
+                    [4] => stdClass Object
+                        (
+                            [latitude] => 41.41801503608
+                            [longitude] => -10.349893569946
+                        )
+
+                    [5] => stdClass Object
+                        (
+                            [latitude] => 41.211721510548
+                            [longitude] => -10.349893569946
+                        )
+
+                    [6] => stdClass Object
+                        (
+                            [latitude] => 41.120745590167
+                            [longitude] => -10.108194351196
+                        )
+
+                )
+
+            [created] => 2013-12-02 16:03:02.201176
+            [id] => 16
+            [modified] => 2013-12-02 16:03:02.201183
+        )
+
+    [11] => stdClass Object
+        (
+            [coordinates] => Array
+                (
+                    [0] => stdClass Object
+                        (
+                            [latitude] => 40.963307953074
+                            [longitude] => -10.091714859009
+                        )
+
+                    [1] => stdClass Object
+                        (
+                            [latitude] => 40.24179856487
+                            [longitude] => -10.108194351196
+                        )
+
+                    [2] => stdClass Object
+                        (
+                            [latitude] => 40.308854425638
+                            [longitude] => -10.976114273071
+                        )
+
+                    [3] => stdClass Object
+                        (
+                            [latitude] => 41.079351149469
+                            [longitude] => -10.827798843384
+                        )
+
+                    [4] => stdClass Object
+                        (
+                            [latitude] => 41.273678115663
+                            [longitude] => -10.294961929321
+                        )
+
+                    [5] => stdClass Object
+                        (
+                            [latitude] => 41.091772220977
+                            [longitude] => -10.229043960571
+                        )
+
+                    [6] => stdClass Object
+                        (
+                            [latitude] => 40.963307953074
+                            [longitude] => -10.091714859009
+                        )
+
+                )
+
+            [created] => 2013-12-02 16:08:27.083322
+            [id] => 17
+            [modified] => 2013-12-02 16:08:27.083327
+        )
+
+    [12] => stdClass Object
+        (
+            [coordinates] => Array
+                (
+                    [0] => stdClass Object
+                        (
+                            [latitude] => 41.120745590167
+                            [longitude] => -10.240030288696
+                        )
+
+                    [1] => stdClass Object
+                        (
+                            [latitude] => 40.279525668813
+                            [longitude] => -10.443277359009
+                        )
+
+                    [2] => stdClass Object
+                        (
+                            [latitude] => 40.258568763913
+                            [longitude] => -9.5039463043213
+                        )
+
+                    [3] => stdClass Object
+                        (
+                            [latitude] => 40.917663624581
+                            [longitude] => -9.3556308746338
+                        )
+
+                    [4] => stdClass Object
+                        (
+                            [latitude] => 40.734770989672
+                            [longitude] => -9.7511386871338
+                        )
+
+                    [5] => stdClass Object
+                        (
+                            [latitude] => 41.211721510548
+                            [longitude] => -9.6797275543213
+                        )
+
+                    [6] => stdClass Object
+                        (
+                            [latitude] => 41.112468789181
+                            [longitude] => -9.9488925933838
+                        )
+
+                    [7] => stdClass Object
+                        (
+                            [latitude] => 41.294317263153
+                            [longitude] => -10.025796890259
+                        )
+
+                    [8] => stdClass Object
+                        (
+                            [latitude] => 41.174519355564
+                            [longitude] => -10.168619155884
+                        )
+
+                    [9] => stdClass Object
+                        (
+                            [latitude] => 41.087632124679
+                            [longitude] => -10.042276382446
+                        )
+
+                    [10] => stdClass Object
+                        (
+                            [latitude] => 41.120745590167
+                            [longitude] => -10.240030288696
+                        )
+
+                    [11] => stdClass Object
+                        (
+                            [latitude] => 41.120745590167
+                            [longitude] => -10.240030288696
+                        )
+
+                )
+
+            [created] => 2013-12-02 16:11:04.008032
+            [id] => 18
+            [modified] => 2013-12-02 16:11:04.008037
+        )
+
+    [13] => stdClass Object
+        (
+            [coordinates] => Array
+                (
+                    [0] => stdClass Object
+                        (
+                            [latitude] => 41.108329997328
+                            [longitude] => -10.937662124634
+                        )
+
+                    [1] => stdClass Object
+                        (
+                            [latitude] => 40.451127265872
+                            [longitude] => -11.355142593384
+                        )
+
+                    [2] => stdClass Object
+                        (
+                            [latitude] => 40.153686857794
+                            [longitude] => -10.097208023071
+                        )
+
+                    [3] => stdClass Object
+                        (
+                            [latitude] => 40.801335759792
+                            [longitude] => -9.5918369293213
+                        )
+
+                    [4] => stdClass Object
+                        (
+                            [latitude] => 41.108329997328
+                            [longitude] => -10.937662124634
+                        )
+
+                )
+
+            [created] => 2013-12-02 16:12:54.492962
+            [id] => 19
+            [modified] => 2013-12-02 16:12:54.492967
+        )
+
+    [14] => stdClass Object
+        (
+            [coordinates] => Array
+                (
+                    [0] => stdClass Object
+                        (
+                            [latitude] => 41.021355108666
+                            [longitude] => -10.564126968384
+                        )
+
+                    [1] => stdClass Object
+                        (
+                            [latitude] => 40.396764305572
+                            [longitude] => -10.602579116821
+                        )
+
+                    [2] => stdClass Object
+                        (
+                            [latitude] => 40.044437584609
+                            [longitude] => -9.7017002105713
+                        )
+
+                    [3] => stdClass Object
+                        (
+                            [latitude] => 40.747256962804
+                            [longitude] => -9.4545078277588
+                        )
+
+                    [4] => stdClass Object
+                        (
+                            [latitude] => 41.162113939397
+                            [longitude] => -9.6577548980713
+                        )
+
+                    [5] => stdClass Object
+                        (
+                            [latitude] => 40.693134153308
+                            [longitude] => -10.141153335571
+                        )
+
+                    [6] => stdClass Object
+                        (
+                            [latitude] => 41.31494988251
+                            [longitude] => -10.278482437134
+                        )
+
+                    [7] => stdClass Object
+                        (
+                            [latitude] => 41.129021347495
+                            [longitude] => -10.591592788696
+                        )
+
+                    [8] => stdClass Object
+                        (
+                            [latitude] => 41.021355108666
+                            [longitude] => -10.564126968384
+                        )
+
+                )
+
+            [created] => 2013-12-02 16:15:59.527081
+            [id] => 20
+            [modified] => 2013-12-02 16:15:59.527086
+        )
+
+    [15] => stdClass Object
+        (
+            [coordinates] => Array
+                (
+                    [0] => stdClass Object
+                        (
+                            [latitude] => 41.124883599291
+                            [longitude] => -7.2956943511963
+                        )
+
+                    [1] => stdClass Object
+                        (
+                            [latitude] => 40.94671366508
+                            [longitude] => -6.9935703277588
+                        )
+
+                    [2] => stdClass Object
+                        (
+                            [latitude] => 40.593099532165
+                            [longitude] => -6.8617343902588
+                        )
+
+                    [3] => stdClass Object
+                        (
+                            [latitude] => 41.004775422229
+                            [longitude] => -7.8120517730713
+                        )
+
+                    [4] => stdClass Object
+                        (
+                            [latitude] => 41.232380238741
+                            [longitude] => -7.6692295074463
+                        )
+
+                    [5] => stdClass Object
+                        (
+                            [latitude] => 41.504463575048
+                            [longitude] => -6.8782138824463
+                        )
+
+                    [6] => stdClass Object
+                        (
+                            [latitude] => 41.20758898181
+                            [longitude] => -6.9221591949463
+                        )
+
+                    [7] => stdClass Object
+                        (
+                            [latitude] => 41.124883599291
+                            [longitude] => -7.2956943511963
+                        )
+
+                )
+
+            [created] => 2013-12-02 16:40:27.047451
+            [id] => 21
+            [modified] => 2013-12-02 16:40:27.047462
+        )
+
+    [16] => stdClass Object
+        (
+            [coordinates] => Array
+                (
+                    [0] => stdClass Object
+                        (
+                            [latitude] => 41.029643387166
+                            [longitude] => -4.0664863586426
+                        )
+
+                    [1] => stdClass Object
+                        (
+                            [latitude] => 39.257778150283
+                            [longitude] => -4.6817207336426
+                        )
+
+                    [2] => stdClass Object
+                        (
+                            [latitude] => 39.223742741391
+                            [longitude] => -1.9461250305176
+                        )
+
+                    [3] => stdClass Object
+                        (
+                            [latitude] => 40.822123575169
+                            [longitude] => -1.7923164367676
+                        )
+
+                    [4] => stdClass Object
+                        (
+                            [latitude] => 41.095912056395
+                            [longitude] => -3.5830879211426
+                        )
+
+                    [5] => stdClass Object
+                        (
+                            [latitude] => 41.029643387166
+                            [longitude] => -4.0664863586426
+                        )
+
+                )
+
+            [created] => 2013-12-02 16:57:47.304971
+            [id] => 22
+            [modified] => 2013-12-02 16:57:47.304977
+        )
+
+    [17] => stdClass Object
+        (
+            [coordinates] => Array
+                (
+                    [0] => stdClass Object
+                        (
+                            [latitude] => 38.994372562071
+                            [longitude] => -8.5669568181038
+                        )
+
+                    [1] => stdClass Object
+                        (
+                            [latitude] => 38.967817687538
+                            [longitude] => -8.5630086064339
+                        )
+
+                    [2] => stdClass Object
+                        (
+                            [latitude] => 38.970220045668
+                            [longitude] => -8.5173466801643
+                        )
+
+                    [3] => stdClass Object
+                        (
+                            [latitude] => 38.993438640019
+                            [longitude] => -8.5209515690804
+                        )
+
+                    [4] => stdClass Object
+                        (
+                            [latitude] => 38.998108127029
+                            [longitude] => -8.536916077137
+                        )
+
+                    [5] => stdClass Object
+                        (
+                            [latitude] => 38.994906226281
+                            [longitude] => -8.5583737492561
+                        )
+
+                    [6] => stdClass Object
+                        (
+                            [latitude] => 38.994372562071
+                            [longitude] => -8.5669568181038
+                        )
+
+                )
+
+            [created] => 2013-12-02 17:55:10.818486
+            [id] => 23
+            [modified] => 2013-12-02 17:55:10.818493
+        )
+
+    [18] => stdClass Object
+        (
+            [coordinates] => Array
+                (
+                    [0] => stdClass Object
+                        (
+                            [latitude] => 41.508577297439
+                            [longitude] => -11.515216827393
+                        )
+
+                    [1] => stdClass Object
+                        (
+                            [latitude] => 40.204050425113
+                            [longitude] => -11.756916046143
+                        )
+
+                    [2] => stdClass Object
+                        (
+                            [latitude] => 41.574361305989
+                            [longitude] => -12.778644561768
+                        )
+
+                    [3] => stdClass Object
+                        (
+                            [latitude] => 41.8122671436
+                            [longitude] => -13.053302764893
+                        )
+
+                    [4] => stdClass Object
+                        (
+                            [latitude] => 41.885921028147
+                            [longitude] => -11.734943389893
+                        )
+
+                    [5] => stdClass Object
+                        (
+                            [latitude] => 41.508577297439
+                            [longitude] => -11.515216827393
+                        )
+
+                )
+
+            [created] => 2013-12-02 23:10:08.267826
+            [id] => 24
+            [modified] => 2013-12-02 23:10:08.267833
+        )
+
+    [19] => stdClass Object
+        (
+            [coordinates] => Array
+                (
+                    [0] => stdClass Object
+                        (
+                            [latitude] => 42.236651880321
+                            [longitude] => -10.603351593018
+                        )
+
+                    [1] => stdClass Object
+                        (
+                            [latitude] => 42.244785356028
+                            [longitude] => -9.9221992492676
+                        )
+
+                    [2] => stdClass Object
+                        (
+                            [latitude] => 41.8122671436
+                            [longitude] => -9.8123359680176
+                        )
+
+                    [3] => stdClass Object
+                        (
+                            [latitude] => 41.697525910759
+                            [longitude] => -10.504474639893
+                        )
+
+                    [4] => stdClass Object
+                        (
+                            [latitude] => 42.008489015724
+                            [longitude] => -10.757160186768
+                        )
+
+                    [5] => stdClass Object
+                        (
+                            [latitude] => 42.122673151173
+                            [longitude] => -10.460529327393
+                        )
+
+                    [6] => stdClass Object
+                        (
+                            [latitude] => 42.236651880321
+                            [longitude] => -10.603351593018
+                        )
+
+                )
+
+            [created] => 2013-12-02 23:11:34.424212
+            [id] => 25
+            [modified] => 2013-12-02 23:11:34.424218
+        )
+
+    [20] => stdClass Object
+        (
+            [coordinates] => Array
+                (
+                    [0] => stdClass Object
+                        (
+                            [latitude] => 42.617791432823
+                            [longitude] => -5.4742813110352
+                        )
+
+                    [1] => stdClass Object
+                        (
+                            [latitude] => 42.488301979602
+                            [longitude] => -2.2662734985352
+                        )
+
+                    [2] => stdClass Object
+                        (
+                            [latitude] => 40.697299008637
+                            [longitude] => -6.3312149047852
+                        )
+
+                    [3] => stdClass Object
+                        (
+                            [latitude] => 42.195968776292
+                            [longitude] => -6.3312149047852
+                        )
+
+                    [4] => stdClass Object
+                        (
+                            [latitude] => 42.617791432823
+                            [longitude] => -5.4742813110352
+                        )
+
+                )
+
+            [created] => 2013-12-02 23:15:11.406797
+            [id] => 26
+            [modified] => 2013-12-02 23:15:11.406803
+        )
+
+    [21] => stdClass Object
+        (
+            [coordinates] => Array
+                (
+                    [0] => stdClass Object
+                        (
+                            [latitude] => 39.762102753751
+                            [longitude] => -9.6797275543213
+                        )
+
+                    [1] => stdClass Object
+                        (
+                            [latitude] => 39.876019419621
+                            [longitude] => -10.811319351196
+                        )
+
+                    [2] => stdClass Object
+                        (
+                            [latitude] => 39.800095956348
+                            [longitude] => -9.2952060699463
+                        )
+
+                    [3] => stdClass Object
+                        (
+                            [latitude] => 39.643767573419
+                            [longitude] => -9.3830966949463
+                        )
+
+                    [4] => stdClass Object
+                        (
+                            [latitude] => 39.762102753751
+                            [longitude] => -9.6797275543213
+                        )
+
+                )
+
+            [created] => 2013-12-02 23:16:52.929458
+            [id] => 27
+            [modified] => 2013-12-02 23:16:52.929463
+        )
+
+    [22] => stdClass Object
+        (
+            [coordinates] => Array
+                (
+                    [0] => stdClass Object
+                        (
+                            [latitude] => 41.488006071854
+                            [longitude] => -9.0974521636963
+                        )
+
+                    [1] => stdClass Object
+                        (
+                            [latitude] => 41.393294288785
+                            [longitude] => -9.7181797027588
+                        )
+
+                    [2] => stdClass Object
+                        (
+                            [latitude] => 41.162113939397
+                            [longitude] => -9.2677402496338
+                        )
+
+                    [3] => stdClass Object
+                        (
+                            [latitude] => 41.33145127733
+                            [longitude] => -8.8722324371338
+                        )
+
+                    [4] => stdClass Object
+                        (
+                            [latitude] => 41.488006071854
+                            [longitude] => -9.0974521636963
+                        )
+
+                )
+
+            [created] => 2013-12-02 23:18:35.468789
+            [id] => 28
+            [modified] => 2013-12-02 23:18:35.468794
+        )
+
+    [23] => stdClass Object
+        (
+            [coordinates] => Array
+                (
+                    [0] => stdClass Object
+                        (
+                            [latitude] => 39.876019419621
+                            [longitude] => -7.7351474761963
+                        )
+
+                    [1] => stdClass Object
+                        (
+                            [latitude] => 40.006579667839
+                            [longitude] => -6.7353916168213
+                        )
+
+                    [2] => stdClass Object
+                        (
+                            [latitude] => 40.107487419012
+                            [longitude] => -7.5868320465088
+                        )
+
+                    [3] => stdClass Object
+                        (
+                            [latitude] => 39.770547500395
+                            [longitude] => -7.9164218902588
+                        )
+
+                    [4] => stdClass Object
+                        (
+                            [latitude] => 39.876019419621
+                            [longitude] => -7.7351474761963
+                        )
+
+                )
+
+            [created] => 2013-12-02 23:30:06.591065
+            [id] => 29
+            [modified] => 2013-12-02 23:30:06.591076
+        )
+
+    [24] => stdClass Object
+        (
+            [coordinates] => Array
+                (
+                    [0] => stdClass Object
+                        (
+                            [latitude] => 40.480381429082
+                            [longitude] => -9.9488925933838
+                        )
+
+                    [1] => stdClass Object
+                        (
+                            [latitude] => 40.296286517117
+                            [longitude] => -10.465250015259
+                        )
+
+                    [2] => stdClass Object
+                        (
+                            [latitude] => 40.718119379753
+                            [longitude] => -10.657510757446
+                        )
+
+                    [3] => stdClass Object
+                        (
+                            [latitude] => 40.738933241136
+                            [longitude] => -10.240030288696
+                        )
+
+                    [4] => stdClass Object
+                        (
+                            [latitude] => 40.480381429082
+                            [longitude] => -9.9488925933838
+                        )
+
+                )
+
+            [created] => 2013-12-02 23:33:27.720412
+            [id] => 30
+            [modified] => 2013-12-02 23:33:27.720417
+        )
+
+    [25] => stdClass Object
+        (
+            [coordinates] => Array
+                (
+                    [0] => stdClass Object
+                        (
+                            [latitude] => 39.88550395018
+                            [longitude] => -9.9730324745178
+                        )
+
+                    [1] => stdClass Object
+                        (
+                            [latitude] => 39.756824261131
+                            [longitude] => -9.7436928749084
+                        )
+
+                    [2] => stdClass Object
+                        (
+                            [latitude] => 39.961332959838
+                            [longitude] => -9.5528054237366
+                        )
+
+                    [3] => stdClass Object
+                        (
+                            [latitude] => 40.006579667839
+                            [longitude] => -9.8892617225647
+                        )
+
+                    [4] => stdClass Object
+                        (
+                            [latitude] => 39.88550395018
+                            [longitude] => -9.9730324745178
+                        )
+
+                )
+
+            [created] => 2013-12-02 23:38:31.774919
+            [id] => 31
+            [modified] => 2013-12-02 23:38:31.774924
+        )
+
+    [26] => stdClass Object
+        (
+            [coordinates] => Array
+                (
+                    [0] => stdClass Object
+                        (
+                            [latitude] => 41.869560826995
+                            [longitude] => -15.95832824707
+                        )
+
+                    [1] => stdClass Object
+                        (
+                            [latitude] => 37.125286284967
+                            [longitude] => -17.05696105957
+                        )
+
+                    [2] => stdClass Object
+                        (
+                            [latitude] => 36.137874718407
+                            [longitude] => -13.80500793457
+                        )
+
+                    [3] => stdClass Object
+                        (
+                            [latitude] => 41.343824581186
+                            [longitude] => -13.01399230957
+                        )
+
+                    [4] => stdClass Object
+                        (
+                            [latitude] => 41.869560826995
+                            [longitude] => -15.95832824707
+                        )
+
+                )
+
+            [created] => 2013-12-02 23:44:49.616029
+            [id] => 32
+            [modified] => 2013-12-02 23:44:49.616035
+        )
+
+    [27] => stdClass Object
+        (
+            [coordinates] => Array
+                (
+                    [0] => stdClass Object
+                        (
+                            [latitude] => 40.776381784829
+                            [longitude] => -9.5478916168213
+                        )
+
+                    [1] => stdClass Object
+                        (
+                            [latitude] => 40.233411907115
+                            [longitude] => -9.9159336090088
+                        )
+
+                    [2] => stdClass Object
+                        (
+                            [latitude] => 39.930800820753
+                            [longitude] => -7.8944492340088
+                        )
+
+                    [3] => stdClass Object
+                        (
+                            [latitude] => 40.805493843894
+                            [longitude] => -7.6582431793213
+                        )
+
+                    [4] => stdClass Object
+                        (
+                            [latitude] => 41.277806467382
+                            [longitude] => -7.9438877105713
+                        )
+
+                    [5] => stdClass Object
+                        (
+                            [latitude] => 41.203456192051
+                            [longitude] => -8.7458896636963
+                        )
+
+                    [6] => stdClass Object
+                        (
+                            [latitude] => 40.934265211779
+                            [longitude] => -9.3171787261963
+                        )
+
+                    [7] => stdClass Object
+                        (
+                            [latitude] => 40.776381784829
+                            [longitude] => -9.5478916168213
+                        )
+
+                )
+
+            [created] => 2013-12-03 15:05:21.46135
+            [id] => 69
+            [modified] => 2013-12-03 15:05:21.461355
+        )
+
+)
+

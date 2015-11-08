@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/SafeGuard/SafeGuard.iml" filepath="$PROJECT_DIR$/SafeGuard/SafeGuard.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SafeGuardProject.iml" filepath="$PROJECT_DIR$/SafeGuardProject.iml" />
+      <module fileurl="file://$PROJECT_DIR$/android-safeguard.iml" filepath="$PROJECT_DIR$/android-safeguard.iml" />
+    </modules>
+  </component>
+</project>
+

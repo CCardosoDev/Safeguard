@@ -1,0 +1,5 @@
+﻿<schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://services.sapo.pt/Metadata/Market" elementFormDefault="qualified" targetNamespace="http://services.sapo.pt/Metadata/Market">
+  <element name="ESBAccessKey" type="string" />
+  <element name="ESBTransactionId" type="string" />
+  <element name="ESBCorrelationId" type="string" />
+</schema>

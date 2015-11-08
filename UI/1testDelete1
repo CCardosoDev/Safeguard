@@ -1,0 +1,26 @@
+calendarToken :b7QfT5oqYc2baSWbBbq8b3
+geoRefToken : pwxnFd7QGjkVLi6CjgbAoe
+profileID : 105
+eventID : 20131203T150325Z-35862@safeguard
+fenceID : 68
+event result : 200
+#
+
+
+{
+	"gamestate" :
+	{
+		"ball"[
+			{
+				"task"  : pointer,
+				"status": {
+					"pos.x" : 21
+					"pos.y" : 1
+				}
+			}
+
+		]
+
+	}
+
+}

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="system">
+    <system systemId="file:/home/claudia/Dropbox/Universidade/Mestrado/Ano06/EngenhariaServicos/sms-pack-WSDL-Contract/OneAPI_SMS_SendSMS/OneAPI_SMS_SendSMS.wsdl" uri="wsdl/OneAPI_SMS_SendSMS.wsdl"/>
+    <system systemId="file:/home/claudia/Dropbox/Universidade/Mestrado/Ano06/EngenhariaServicos/sms-pack-WSDL-Contract/OneAPI_SMS_SendSMS/esbCredentials.xsd" uri="wsdl/esbCredentials.xsd"/>
+    <system systemId="file:/home/claudia/Dropbox/Universidade/Mestrado/Ano06/EngenhariaServicos/sms-pack-WSDL-Contract/OneAPI_SMS_SendSMS/Market.xsd" uri="wsdl/Market.xsd"/>
+    <system systemId="file:/home/claudia/Dropbox/Universidade/Mestrado/Ano06/EngenhariaServicos/sms-pack-WSDL-Contract/OneAPI_SMS_SendSMS/OneAPI_pxprof_common_types.xsd" uri="wsdl/OneAPI_pxprof_common_types.xsd"/>
+    <system systemId="file:/home/claudia/Dropbox/Universidade/Mestrado/Ano06/EngenhariaServicos/sms-pack-WSDL-Contract/OneAPI_SMS_SendSMS/OneAPI_SMS_pxprof_sms_types.xsd" uri="wsdl/OneAPI_SMS_pxprof_sms_types.xsd"/>
+    <system systemId="file:/home/claudia/Dropbox/Universidade/Mestrado/Ano06/EngenhariaServicos/sms-pack-WSDL-Contract/OneAPI_SMS_Notification/OneAPI_SMS_Notification.wsdl" uri="wsdl/OneAPI_SMS_Notification.wsdl"/>
+    <system systemId="file:/home/claudia/Dropbox/Universidade/Mestrado/Ano06/EngenhariaServicos/sms-pack-WSDL-Contract/OneAPI_SMS_Notification/esbCredentials.xsd" uri="wsdl/esbCredentials.xsd"/>
+    <system systemId="file:/home/claudia/Dropbox/Universidade/Mestrado/Ano06/EngenhariaServicos/sms-pack-WSDL-Contract/OneAPI_SMS_Notification/Market.xsd" uri="wsdl/Market.xsd"/>
+    <system systemId="file:/home/claudia/Dropbox/Universidade/Mestrado/Ano06/EngenhariaServicos/sms-pack-WSDL-Contract/OneAPI_SMS_Notification/OneAPI_SMS_pxprof_sms_types.xsd" uri="wsdl/OneAPI_SMS_pxprof_sms_types.xsd"/>
+</catalog>

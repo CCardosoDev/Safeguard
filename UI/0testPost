@@ -1,0 +1,38 @@
+calendarToken :iEgy9C57AwXxrZsVFvotdB
+geoRefToken :gBJkVC3hEzGuL2pkB4YqTZ
+coordinates :Array
+(
+    [0] => Array
+        (
+            [latitude] => 41.008920735005
+            [longitude] => -10.800333023071
+        )
+
+    [1] => Array
+        (
+            [latitude] => 40.036026529812
+            [longitude] => -10.514688491821
+        )
+
+    [2] => Array
+        (
+            [latitude] => 41.104190944576
+            [longitude] => -9.3226718902588
+        )
+
+    [3] => Array
+        (
+            [latitude] => 41.385051949707
+            [longitude] => -9.8225498199463
+        )
+
+    [4] => Array
+        (
+            [latitude] => 41.008920735005
+            [longitude] => -10.800333023071
+        )
+
+)
+
+fenceId :74
+requestData{"event":{"summary":"asd","description":"asd","dtstart":{"day":"09","month":"12","year":"2013","hour":"19","minute":"32","second":"00","timezone":"WET"},"duration":{"week":"0","day":"0","hour":"19","minute":"32"},"rrule":{"count":"1","interval":"1","freq":"daily","byday":"MO"},"location":"74"}}

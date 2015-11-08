@@ -1,0 +1,53 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".ActivityLauncherWarning">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/launcher_warning"
+        android:textSize="@dimen/activity_launcher_warning_text_size"
+        android:gravity="center_horizontal"
+        android:id="@+id/textView"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:src="@drawable/warning"
+        android:adjustViewBounds="true"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentEnd="false"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:cropToPadding="false"
+        android:layout_alignParentTop="true"
+        android:layout_above="@+id/textView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ok"
+        android:id="@+id/buttonOk"
+        android:clickable="true"
+        android:layout_marginTop="40dp"
+        android:singleLine="false"
+        android:layout_alignWithParentIfMissing="false"
+        android:layout_alignParentEnd="false"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:onClick="showHomeLauncherChooser" />
+
+</RelativeLayout>

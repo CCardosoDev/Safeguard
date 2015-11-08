@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:tns="urn:oma:wsdl:pxprof:sms:1.0:types" targetNamespace="urn:oma:wsdl:pxprof:sms:1.0:types">
+  <complexType name="DeliveryInformation">
+    <annotation>
+      <documentation xml:lang="en">&lt;p&gt;The delivery status of a &lt;abbr&gt;SMS&lt;/abbr&gt; message sent to a specific destination address.&lt;/p&gt;</documentation>
+    </annotation>
+    <sequence>
+      <element name="address" type="anyURI">
+        <annotation>
+          <documentation xml:lang="en">The destination address. e.g. &lt;code&gt;tel:+351213456789&lt;/code&gt;.</documentation>
+        </annotation>
+      </element>
+      <element name="deliveryStatus" type="tns:DeliveryStatus">
+        <annotation>
+          <documentation xml:lang="en">The delivery status.</documentation>
+        </annotation>
+      </element>
+      <element name="description" type="string" minOccurs="0" maxOccurs="1">
+        <annotation>
+          <documentation xml:lang="en">The delivery status description.</documentation>
+        </annotation>
+      </element>
+    </sequence>
+  </complexType>
+  <simpleType name="DeliveryStatus">
+    <annotation>
+      <documentation xml:lang="en">&lt;p&gt;Message's delivery status.&lt;/p&gt;</documentation>
+    </annotation>
+    <restriction base="string">
+      <enumeration value="DeliveredToNetwork">
+        <annotation>
+          <documentation xml:lang="en">Successful delivery to the network enabler responsible for routing the SMS.</documentation>
+        </annotation>
+      </enumeration>
+      <enumeration value="DeliveryUncertain">
+        <annotation>
+          <documentation xml:lang="en">Delivery status unknown. e.g. because it was handed off to another network.</documentation>
+        </annotation>
+      </enumeration>
+      <enumeration value="DeliveryImpossible">
+        <annotation>
+          <documentation xml:lang="en">Unsuccessful delivery. The message could not be delivered before expired.</documentation>
+        </annotation>
+      </enumeration>
+      <enumeration value="MessageWaiting">
+        <annotation>
+          <documentation xml:lang="en">The message is still queued for delivery. This is a temporary state, pending transition to one of the preceding states.</documentation>
+        </annotation>
+      </enumeration>
+      <enumeration value="DeliveredToTerminal">
+        <annotation>
+          <documentation xml:lang="en">Successful delivery to Terminal.</documentation>
+        </annotation>
+      </enumeration>
+      <enumeration value="DeliveryNotificationNotSupported">
+        <annotation>
+          <documentation xml:lang="en">Unable to provide delivery receipt notification.</documentation>
+        </annotation>
+      </enumeration>
+    </restriction>
+  </simpleType>
+</schema>

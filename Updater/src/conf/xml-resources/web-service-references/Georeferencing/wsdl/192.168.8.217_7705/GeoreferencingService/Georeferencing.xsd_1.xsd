@@ -1,0 +1,288 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI at http://jax-ws.dev.java.net. RI's version is Metro/2.3 (tags/2.3-7528; 2013-04-29T19:34:10+0000) JAXWS-RI/2.2.8 JAXWS/2.2 svn-revision#unknown. --><xs:schema xmlns:tns="http://georeferencingservice.es.com/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://georeferencingservice.es.com/">
+
+<xs:element name="GeoreferencingAlreadyExistsException" type="tns:GeoreferencingAlreadyExistsException"/>
+
+<xs:element name="GeoreferencingAuthenticationException" type="tns:GeoreferencingAuthenticationException"/>
+
+<xs:element name="GeoreferencingCoordinatesException" type="tns:GeoreferencingCoordinatesException"/>
+
+<xs:element name="GeoreferencingEmptyException" type="tns:GeoreferencingEmptyException"/>
+
+<xs:element name="GeoreferencingNotExistsException" type="tns:GeoreferencingNotExistsException"/>
+
+<xs:element name="GeoreferencingSQLException" type="tns:GeoreferencingSQLException"/>
+
+<xs:element name="GeoreferencingUserNotExistsException" type="tns:GeoreferencingUserNotExistsException"/>
+
+<xs:element name="GeorefererencingException" type="tns:GeorefererencingException"/>
+
+<xs:element name="IOException" type="tns:IOException"/>
+
+<xs:element name="createUser" type="tns:createUser"/>
+
+<xs:element name="createUserResponse" type="tns:createUserResponse"/>
+
+<xs:element name="editCoordinate" type="tns:editCoordinate"/>
+
+<xs:element name="editCoordinateResponse" type="tns:editCoordinateResponse"/>
+
+<xs:element name="editFence" type="tns:editFence"/>
+
+<xs:element name="editFenceResponse" type="tns:editFenceResponse"/>
+
+<xs:element name="fencesContainingCoordinate" type="tns:fencesContainingCoordinate"/>
+
+<xs:element name="fencesContainingCoordinateResponse" type="tns:fencesContainingCoordinateResponse"/>
+
+<xs:element name="getCompleteCoordinateHistory" type="tns:getCompleteCoordinateHistory"/>
+
+<xs:element name="getCompleteCoordinateHistoryResponse" type="tns:getCompleteCoordinateHistoryResponse"/>
+
+<xs:element name="getCoordinateHistory" type="tns:getCoordinateHistory"/>
+
+<xs:element name="getCoordinateHistoryResponse" type="tns:getCoordinateHistoryResponse"/>
+
+<xs:element name="getFences" type="tns:getFences"/>
+
+<xs:element name="getFencesResponse" type="tns:getFencesResponse"/>
+
+<xs:element name="insertCoordinate" type="tns:insertCoordinate"/>
+
+<xs:element name="insertCoordinateResponse" type="tns:insertCoordinateResponse"/>
+
+<xs:element name="insertFence" type="tns:insertFence"/>
+
+<xs:element name="insertFenceResponse" type="tns:insertFenceResponse"/>
+
+<xs:element name="removeCoordinate" type="tns:removeCoordinate"/>
+
+<xs:element name="removeCoordinateResponse" type="tns:removeCoordinateResponse"/>
+
+<xs:element name="removeFence" type="tns:removeFence"/>
+
+<xs:element name="removeFenceResponse" type="tns:removeFenceResponse"/>
+
+<xs:element name="removeParentUser" type="tns:removeParentUser"/>
+
+<xs:element name="removeParentUserResponse" type="tns:removeParentUserResponse"/>
+
+<xs:complexType name="removeFence">
+<xs:sequence>
+<xs:element name="childUserID" type="xs:string" minOccurs="0"/>
+<xs:element name="fenceID" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="removeFenceResponse">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="GeoreferencingNotExistsException">
+<xs:sequence>
+<xs:element name="message" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="GeoreferencingSQLException">
+<xs:sequence>
+<xs:element name="message" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="GeoreferencingAuthenticationException">
+<xs:sequence>
+<xs:element name="message" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="GeoreferencingUserNotExistsException">
+<xs:sequence>
+<xs:element name="message" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="removeParentUser">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="removeParentUserResponse">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="getCoordinateHistory">
+<xs:sequence>
+<xs:element name="childUserID" type="xs:string" minOccurs="0"/>
+<xs:element name="startTime" type="xs:string" minOccurs="0"/>
+<xs:element name="endTime" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getCoordinateHistoryResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:coordinateID" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="coordinateID">
+<xs:sequence>
+<xs:element name="coordinate" type="tns:coordinate" minOccurs="0"/>
+<xs:element name="created" type="xs:string" minOccurs="0"/>
+<xs:element name="id" type="xs:int"/>
+<xs:element name="modified" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="coordinate">
+<xs:sequence>
+<xs:element name="latitude" type="xs:double"/>
+<xs:element name="longitude" type="xs:double"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="insertCoordinate">
+<xs:sequence>
+<xs:element name="childUserID" type="xs:string" minOccurs="0"/>
+<xs:element name="coordinate" type="tns:coordinate" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="insertCoordinateResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="GeoreferencingEmptyException">
+<xs:sequence>
+<xs:element name="message" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="GeoreferencingCoordinatesException">
+<xs:sequence>
+<xs:element name="message" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="insertFence">
+<xs:sequence>
+<xs:element name="childUserID" type="xs:string" minOccurs="0"/>
+<xs:element name="coordinates" type="tns:coordinate" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="insertFenceResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="GeoreferencingAlreadyExistsException">
+<xs:sequence>
+<xs:element name="message" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="IOException">
+<xs:sequence>
+<xs:element name="message" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getFences">
+<xs:sequence>
+<xs:element name="childUserID" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getFencesResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:fenceID" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="fenceID">
+<xs:sequence>
+<xs:element name="coordinates" type="tns:coordinate" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+<xs:element name="created" type="xs:string" minOccurs="0"/>
+<xs:element name="id" type="xs:int"/>
+<xs:element name="modified" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="editCoordinate">
+<xs:sequence>
+<xs:element name="childUserID" type="xs:string" minOccurs="0"/>
+<xs:element name="coordinateID" type="xs:int"/>
+<xs:element name="coordinate" type="tns:coordinate" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="editCoordinateResponse">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="editFence">
+<xs:sequence>
+<xs:element name="childUserID" type="xs:string" minOccurs="0"/>
+<xs:element name="fenceID" type="xs:int"/>
+<xs:element name="coordinates" type="tns:coordinate" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="editFenceResponse">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="getCompleteCoordinateHistory">
+<xs:sequence>
+<xs:element name="childUserID" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getCompleteCoordinateHistoryResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:coordinateID" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="createUser">
+<xs:sequence>
+<xs:element name="childUserID" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="createUserResponse">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="removeCoordinate">
+<xs:sequence>
+<xs:element name="childUserID" type="xs:string" minOccurs="0"/>
+<xs:element name="coordinate" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="removeCoordinateResponse">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="fencesContainingCoordinate">
+<xs:sequence>
+<xs:element name="childUserID" type="xs:string" minOccurs="0"/>
+<xs:element name="coordinate" type="tns:coordinate" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="fencesContainingCoordinateResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:fenceID" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="GeorefererencingException">
+<xs:sequence>
+<xs:element name="message" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+</xs:schema>

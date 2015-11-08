@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".ActivityWelcome$DummySectionFragment" >
+    
+	<ImageView
+	        android:id="@+id/imageView1"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerHorizontal="true"
+	        android:src="@drawable/complete"
+	        android:layout_above="@id/linearLayout1"
+	        android:layout_marginBottom="20sp" />
+    
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="A aplicação encontra-se devidamente configurada!"
+            android:textSize="26sp" />
+        
+        <Button
+            android:id="@+id/ButtonUsar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dip"
+            android:text="Começar a usar"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:onClick="onClickButtonUsar" />
+        
+        <Button
+            android:id="@+id/ButtonUsar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dip"
+            android:text="Sair"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:onClick="onClickButtonSair" />
+        
+    </LinearLayout>
+    
+</RelativeLayout>

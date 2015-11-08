@@ -1,0 +1,155 @@
+calendarToken :u2iZm7bXXpH3MGFHur9bf6
+geoRefToken :aUFyCTATC4Zb6oArxr24XG
+validEvents :Array
+(
+    [0] => Array
+        (
+            [description] => asdasd
+            [dtstart] => Array
+                (
+                    [day] => 09
+                    [hour] => 18
+                    [minute] => 44
+                    [month] => 12
+                    [second] => 00
+                    [timezone] => WET
+                    [year] => 2013
+                )
+
+            [duration] => Array
+                (
+                    [day] => 0
+                    [hour] => 18
+                    [minute] => 44
+                    [week] => 0
+                )
+
+            [location] => 73
+            [rrule] => Array
+                (
+                    [byday] => MO
+                    [count] => 12
+                    [freq] => DAILY
+                    [interval] => 1
+                )
+
+            [summary] => ssad
+            [uid] => 20131209T184600Z-49228@safeguard
+        )
+
+    [1] => Array
+        (
+            [description] => asd
+            [dtstart] => Array
+                (
+                    [day] => 09
+                    [hour] => 19
+                    [minute] => 32
+                    [month] => 12
+                    [second] => 00
+                    [timezone] => WET
+                    [year] => 2013
+                )
+
+            [duration] => Array
+                (
+                    [day] => 0
+                    [hour] => 19
+                    [minute] => 32
+                    [week] => 0
+                )
+
+            [location] => 74
+            [rrule] => Array
+                (
+                    [byday] => MO
+                    [count] => 1
+                    [freq] => DAILY
+                    [interval] => 1
+                )
+
+            [summary] => asd
+            [uid] => 20131209T193442Z-98085@safeguard
+        )
+
+)
+
+fences :Array
+(
+    [0] => stdClass Object
+        (
+            [coordinates] => Array
+                (
+                    [0] => stdClass Object
+                        (
+                            [latitude] => 40.842904877297
+                            [longitude] => -8.7623691558838
+                        )
+
+                    [1] => stdClass Object
+                        (
+                            [latitude] => 41.033787135219
+                            [longitude] => -10.119180679321
+                        )
+
+                    [2] => stdClass Object
+                        (
+                            [latitude] => 39.8970943726
+                            [longitude] => -8.9711093902588
+                        )
+
+                    [3] => stdClass Object
+                        (
+                            [latitude] => 40.842904877297
+                            [longitude] => -8.7623691558838
+                        )
+
+                )
+
+            [created] => 2013-12-09 18:46:00.078478
+            [id] => 73
+            [modified] => 2013-12-09 18:46:00.078485
+        )
+
+    [1] => stdClass Object
+        (
+            [coordinates] => Array
+                (
+                    [0] => stdClass Object
+                        (
+                            [latitude] => 41.008920735005
+                            [longitude] => -10.800333023071
+                        )
+
+                    [1] => stdClass Object
+                        (
+                            [latitude] => 40.036026529812
+                            [longitude] => -10.514688491821
+                        )
+
+                    [2] => stdClass Object
+                        (
+                            [latitude] => 41.104190944576
+                            [longitude] => -9.3226718902588
+                        )
+
+                    [3] => stdClass Object
+                        (
+                            [latitude] => 41.385051949707
+                            [longitude] => -9.8225498199463
+                        )
+
+                    [4] => stdClass Object
+                        (
+                            [latitude] => 41.008920735005
+                            [longitude] => -10.800333023071
+                        )
+
+                )
+
+            [created] => 2013-12-09 19:34:42.580708
+            [id] => 74
+            [modified] => 2013-12-09 19:34:42.580715
+        )
+
+)

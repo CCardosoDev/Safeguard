@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="urn:oma:wsdl:pxprof:common:1.0:types">
+  <complexType name="ChargingInformation">
+    <annotation>
+      <documentation xml:lang="en">&lt;p&gt;This entity is not supported by our implementation. Do not use.&lt;/p&gt;</documentation>
+    </annotation>
+    <sequence>
+      <element name="description" type="string" minOccurs="1" maxOccurs="unbounded" />
+      <element maxOccurs="1" minOccurs="0" name="currency" type="string" />
+      <element maxOccurs="1" minOccurs="0" name="amount" type="decimal" />
+      <element maxOccurs="1" minOccurs="0" name="code" type="string" />
+    </sequence>
+  </complexType>
+  <complexType name="SimpleReference">
+    <sequence>
+      <element name="endpoint" type="anyURI">
+        <annotation>
+          <documentation xml:lang="en">
+            &lt;p&gt;The URI for the application HTTP endpoint that will receive the delivery notifications.&lt;/p&gt;
+            &lt;p&gt;The exact type of the endpoint interface is choosen with the interfaceName member.&lt;/p&gt;
+          </documentation>
+        </annotation>
+      </element>
+      <element name="interfaceName" type="string">
+        <annotation>
+          <documentation xml:lang="en">
+            &lt;p&gt;The endpoint interface name. Currently set this to &lt;em&gt;soap&lt;/em&gt; (your application must implement the &lt;a href="#service-OneAPI/SMS/Notification"&gt;Notification&lt;/a&gt; interface).&lt;/p&gt;
+          </documentation>
+        </annotation>
+      </element>
+      <element name="correlator" type="string">
+        <annotation>
+          <documentation xml:lang="en">
+            &lt;p&gt;An opaque value defined by your application. It was defined when you called the &lt;a href="#service-OneAPI/SMS/SendSMS-operation-sendSms"&gt;sendSms&lt;/a&gt; operation. It will be sent for the application &lt;a href="#service-OneAPI/SMS/Notification"&gt;notification&lt;/a&gt; endpoint as a callback context.&lt;/p&gt;
+          </documentation>
+        </annotation>
+      </element>
+    </sequence>
+  </complexType>
+</schema>

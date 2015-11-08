@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="150sp"
+    android:orientation="vertical"
+    android:background="#FF708090" >
+
+    <TextView
+        android:id="@+id/txt_dia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:text="Como te sentes?"
+        android:textColor="@android:color/white"
+        android:textSize="30sp"
+        android:textStyle="bold" >
+    </TextView>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btn_good"
+            android:layout_width="75sp"
+            android:layout_height="75sp"
+            android:clickable="true"
+            android:background="@drawable/good" />
+
+        <Button
+            android:id="@+id/btn_ml"
+            android:layout_width="75sp"
+            android:layout_height="75sp"
+            android:layout_marginLeft="30sp"
+            android:clickable="true"
+            android:background="@drawable/ml" />
+        
+        <Button
+            android:id="@+id/btn_bad"
+            android:layout_width="75sp"
+            android:layout_height="75sp"
+            android:layout_marginLeft="30sp"
+            android:clickable="true"
+            android:background="@drawable/shy" />
+    </LinearLayout>
+
+</LinearLayout>

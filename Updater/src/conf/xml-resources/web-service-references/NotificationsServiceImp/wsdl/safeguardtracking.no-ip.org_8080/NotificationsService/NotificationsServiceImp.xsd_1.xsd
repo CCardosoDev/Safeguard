@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI at http://jax-ws.dev.java.net. RI's version is Metro/2.3 (tags/2.3-7528; 2013-04-29T19:34:10+0000) JAXWS-RI/2.2.8 JAXWS/2.2 svn-revision#unknown. --><xs:schema xmlns:tns="urn:oma:wsdl:pxprof:sms:1.0:types" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="urn:oma:wsdl:pxprof:sms:1.0:types">
+
+<xs:complexType name="DeliveryInformation">
+<xs:sequence>
+<xs:element name="address" type="xs:anyURI"/>
+<xs:element name="deliveryStatus" type="tns:DeliveryStatus"/>
+<xs:element name="description" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:simpleType name="DeliveryStatus">
+<xs:restriction base="xs:string">
+<xs:enumeration value="DeliveredToNetwork"/>
+<xs:enumeration value="DeliveryUncertain"/>
+<xs:enumeration value="DeliveryImpossible"/>
+<xs:enumeration value="MessageWaiting"/>
+<xs:enumeration value="DeliveredToTerminal"/>
+<xs:enumeration value="DeliveryNotificationNotSupported"/>
+</xs:restriction>
+</xs:simpleType>
+</xs:schema>

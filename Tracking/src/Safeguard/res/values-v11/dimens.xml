@@ -1,0 +1,11 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+<!-- 	<dimen name="activity_launcher_warning_text_size">50sp</dimen> -->
+<!-- 	<dimen name="activity_home_hora">180sp</dimen> -->
+<!-- 	<dimen name="activity_home_data">30sp</dimen> -->
+<!-- 	<dimen name="activity_home_localizacao">40sp</dimen> -->
+	
+</resources>

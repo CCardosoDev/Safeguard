@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="system">
+    <system systemId="https://192.168.8.217:7706/GeoreferencingService/Georeferencing?wsdl" uri="src/conf/xml-resources/web-service-references/Georeferencing/wsdl/192.168.8.217_7706/GeoreferencingService/Georeferencing.wsdl"/>
+    <system systemId="https://192.168.8.217:7706/GeoreferencingService/Georeferencing?xsd=1" uri="src/conf/xml-resources/web-service-references/Georeferencing/wsdl/192.168.8.217_7706/GeoreferencingService/Georeferencing.xsd_1.xsd"/>
+</catalog>

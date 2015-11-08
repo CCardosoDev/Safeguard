@@ -1,0 +1,55 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SplashScreen">
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start GPS Tracking"
+        android:id="@+id/startGPSTracking"
+        android:layout_gravity="center"
+        android:clickable="true"
+        android:onClick="startGPSTracking" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Stop GPS Tracking"
+        android:id="@+id/buttonStopGPSTracking"
+        android:layout_gravity="center"
+        android:clickable="true"
+        android:onClick="stopGPSTracking" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sair"
+        android:id="@+id/button"
+        android:layout_gravity="center"
+        android:clickable="true"
+        android:onClick="launcher"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Settings"
+        android:id="@+id/buttonTest"
+        android:layout_gravity="center"
+        android:clickable="true"
+        android:onClick="onClickbuttonSettings"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="GCM"
+        android:id="@+id/buttonGCM"
+        android:layout_gravity="center"
+        android:clickable="true"
+        android:onClick="onClickbuttonGCM"/>
+
+</LinearLayout>

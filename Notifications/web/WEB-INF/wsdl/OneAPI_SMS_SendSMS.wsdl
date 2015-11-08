@@ -1,0 +1,149 @@
+<definitions targetNamespace="urn:oma:wsdl:pxprof:sms:1.0:send:interface:local" xmlns="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="urn:oma:wsdl:pxprof:sms:1.0:send:interface:local" xmlns:esb="http://services.sapo.pt/definitions" xmlns:g4="http://services.sapo.pt/Metadata/Market" xmlns:g5="urn:oma:wsdl:pxprof:sms:1.0:types" xmlns:g6="urn:oma:wsdl:pxprof:common:1.0:types">
+  <types>
+    <xsd:schema targetNamespace="urn:oma:wsdl:pxprof:sms:1.0:send:interface:local" elementFormDefault="qualified">
+      <xsd:import namespace="http://services.sapo.pt/definitions" schemaLocation="esbCredentials.xsd" />
+      <xsd:import namespace="http://services.sapo.pt/Metadata/Market" schemaLocation="Market.xsd" />
+      <xsd:import namespace="urn:oma:wsdl:pxprof:common:1.0:types" schemaLocation="OneAPI_pxprof_common_types.xsd" />
+      <xsd:import namespace="urn:oma:wsdl:pxprof:sms:1.0:types" schemaLocation="OneAPI_SMS_pxprof_sms_types.xsd" />
+      <xsd:element name="getSmsDeliveryStatus">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="requestIdentifier" type="xsd:string" minOccurs="1" maxOccurs="1" nillable="false">
+              <xsd:annotation>
+                <xsd:documentation xml:lang="en">&lt;p&gt;The request identifier of a sent &lt;abbr&gt;SMS&lt;/abbr&gt; message.&lt;/p&gt;&lt;p&gt;This is the result value returned by the &lt;a href="#service-OneAPI/SMS/SendSMS-operation-sendSms"&gt;sendSms&lt;/a&gt; operation.&lt;/p&gt;</xsd:documentation>
+                <xsd:documentation xml:lang="pt">&lt;p&gt;O identificador de um pedido de envio de &lt;abbr&gt;SMS&lt;/abbr&gt;.&lt;/p&gt;&lt;p&gt;Este é o valor de resultado retornado pela operação &lt;a href="#service-OneAPI/SMS/SendSMS-operation-sendSms"&gt;sendSms&lt;/a&gt;.&lt;/p&gt;</xsd:documentation>
+              </xsd:annotation>
+            </xsd:element>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="getSmsDeliveryStatusResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="result" type="g5:DeliveryInformation" minOccurs="0" maxOccurs="unbounded" nillable="false" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="sendSms">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="addresses" type="xsd:anyURI" minOccurs="1" maxOccurs="unbounded" nillable="false">
+              <xsd:annotation>
+                <xsd:documentation xml:lang="en">&lt;p&gt;A list of one or more destination telephone addresses&lt;/p&gt;&lt;p&gt;This must have the format &lt;code&gt;tel:+&lt;em&gt;[COUNTRY_CODE]&lt;/em&gt;&lt;em&gt;[NUMBER]&lt;/em&gt;&lt;/code&gt;, e.g. &lt;code&gt;tel+:&lt;em&gt;351&lt;/em&gt;&lt;em&gt;960000001&lt;/em&gt;&lt;/code&gt;&lt;/p&gt;</xsd:documentation>
+                <xsd:documentation xml:lang="pt">&lt;p&gt;Lista de um ou mais endereços de telefone de destino.&lt;/p&gt;&lt;p&gt;Cada endereço deverá ter o formato &lt;code&gt;tel:+&lt;em&gt;[CÓDIGO_PAÍS]&lt;/em&gt;&lt;em&gt;[NÚMERO]&lt;/em&gt;&lt;/code&gt;, ex. &lt;code&gt;tel+:&lt;em&gt;351&lt;/em&gt;&lt;em&gt;960000001&lt;/em&gt;&lt;/code&gt;&lt;/p&gt;</xsd:documentation>
+              </xsd:annotation>
+            </xsd:element>
+            <xsd:element name="senderName" type="xsd:string" minOccurs="0" maxOccurs="1" nillable="false">
+              <xsd:annotation>
+                <xsd:documentation xml:lang="en">&lt;p&gt;The sender name that will appear on the telephone.&lt;/p&gt;
+&lt;p&gt;This must have the format: &lt;code&gt;[ONE &lt;em&gt;LETTER&lt;/em&gt;][ONE OR MORE: &lt;em&gt;LETTER&lt;/em&gt; or &lt;em&gt;DIGIT&lt;/em&gt;]&lt;/code&gt;, eg. &lt;code&gt;Neo&lt;/code&gt;.&lt;/p&gt;
+&lt;p class="note"&gt;OneAPI defines this parameter as optional, but on our implementation this is really required.&lt;/p&gt;</xsd:documentation>
+                <xsd:documentation xml:lang="pt">&lt;p&gt;Nome do remetente que irá ser exibido no telefone.&lt;/p&gt;
+&lt;p&gt;Este nome deverá ter o formato &lt;code&gt;[UMA &lt;em&gt;LETRA&lt;/em&gt;][UM ou MAIS: &lt;em&gt;LETRA&lt;/em&gt; ou &lt;em&gt;DIGITO&lt;/em&gt;]&lt;/code&gt;, eg. &lt;code&gt;Neo&lt;/code&gt;.&lt;/p&gt;
+&lt;p class="note"&gt;A OneAPI define este parâmetro como opcional, no entanto, na nossa implementação este parâmetro é mandatório.&lt;/p&gt;</xsd:documentation>
+              </xsd:annotation>
+            </xsd:element>
+            <xsd:element name="charging" type="g6:ChargingInformation" minOccurs="0" maxOccurs="1" nillable="false">
+              <xsd:annotation>
+                <xsd:documentation xml:lang="en">&lt;p&gt;Do not pass this parameter, or set it to &lt;code&gt;null&lt;/code&gt;. Its not used by our implementation.&lt;/p&gt;</xsd:documentation>
+                <xsd:documentation xml:lang="pt">&lt;p&gt;Este parâmetro não deverá ser utilizador, ou deverá estar a &lt;code&gt;null&lt;/code&gt;. Não é usado pela nossa implementação.&lt;/p&gt;</xsd:documentation>
+              </xsd:annotation>
+            </xsd:element>
+            <xsd:element name="message" type="xsd:string" minOccurs="1" maxOccurs="1" nillable="false">
+              <xsd:annotation>
+                <xsd:documentation xml:lang="en">&lt;p&gt;The &lt;abbr&gt;SMS&lt;/abbr&gt; content.&lt;/p&gt;&lt;p&gt;If this message is comprised entirely by &lt;abbr&gt;ASCII&lt;/abbr&gt; characters, you can use a maximum of 140 characters. Otherwise, you can use a maximum of 70 characters&lt;/p&gt;</xsd:documentation>
+                <xsd:documentation xml:lang="pt">&lt;p&gt;O conteúdo da mensagem &lt;abbr&gt;SMS&lt;/abbr&gt;.&lt;/p&gt;&lt;p&gt;Se a mensagem apenas utilizar caracteres &lt;abbr&gt;ASCII&lt;/abbr&gt;, esta poderá ter uma dimensão máxima de 140 caracteres. Caso contrário, poderá ter uma dimensão máxima de 70 caracteres.&lt;/p&gt;</xsd:documentation>
+              </xsd:annotation>
+            </xsd:element>
+            <xsd:element name="receiptRequest" type="g6:SimpleReference" minOccurs="0" maxOccurs="1" nillable="false">
+              <xsd:annotation>
+                <xsd:documentation xml:lang="en">&lt;p&gt;Defines the endpoint that should be notified when the delivery state changes; e.g. when the message has been delivered to the terminal.&lt;/p&gt;</xsd:documentation>
+                <xsd:documentation xml:lang="pt">&lt;p&gt;Define o &lt;em&gt;endpoint&lt;/em&gt; a notificar quando o estado de entrega do &lt;abbr&gt;SMS&lt;/abbr&gt; muda; ex. quando a mensagem for entregue no terminal móvel.&lt;/p&gt;</xsd:documentation>
+              </xsd:annotation>
+            </xsd:element>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="sendSmsResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="result" type="xsd:string" minOccurs="1" maxOccurs="1" nillable="false">
+              <xsd:annotation>
+                <xsd:documentation xml:lang="en">&lt;p&gt;The request identifier of the sent &lt;abbr&gt;SMS&lt;/abbr&gt; message.&lt;/p&gt;&lt;p&gt;You can use this identifier to retrieve the delivery state (by calling the &lt;a href="#service-OneAPI/SMS/SendSMS-operation-getSmsDeliveryStatus"&gt;getSmsDeliveryStatus&lt;/a&gt; operation).&lt;/p&gt;</xsd:documentation>
+                <xsd:documentation xml:lang="pt">&lt;p&gt;O identificador do pedido de envio de &lt;abbr&gt;SMS&lt;/abbr&gt;.&lt;/p&gt;&lt;p&gt;Pode usar este identificador para obter o estado de entrega (através da operação &lt;a href="#service-OneAPI/SMS/SendSMS-operation-getSmsDeliveryStatus"&gt;getSmsDeliveryStatus&lt;/a&gt;).&lt;/p&gt;</xsd:documentation>
+              </xsd:annotation>
+            </xsd:element>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+    </xsd:schema>
+  </types>
+  <message name="ESBCredentialsSoapIn">
+    <part name="ESBCredentials" element="esb:ESBCredentials" />
+  </message>
+  <message name="getSmsDeliveryStatusSoapIn">
+    <part name="parameters" element="tns:getSmsDeliveryStatus" />
+  </message>
+  <message name="getSmsDeliveryStatusSoapInHeaders">
+    <part name="ESBAccessKey" element="g4:ESBAccessKey" />
+    <part name="ESBCorrelationId" element="g4:ESBCorrelationId" />
+  </message>
+  <message name="getSmsDeliveryStatusSoapOut">
+    <part name="parameters" element="tns:getSmsDeliveryStatusResponse" />
+  </message>
+  <message name="sendSmsSoapIn">
+    <part name="parameters" element="tns:sendSms" />
+  </message>
+  <message name="sendSmsSoapInHeaders">
+    <part name="ESBAccessKey" element="g4:ESBAccessKey" />
+    <part name="ESBCorrelationId" element="g4:ESBCorrelationId" />
+  </message>
+  <message name="sendSmsSoapOut">
+    <part name="parameters" element="tns:sendSmsResponse" />
+  </message>
+  <portType name="SendSMSSoapSecure">
+    <operation name="getSmsDeliveryStatus">
+      <documentation>&lt;p&gt;Obtains the delivery state of a &lt;abbr&gt;SMS&lt;/abbr&gt; message sent using operation &lt;a href="#service-OneAPI/SMS/SendSMS-operation-sendSms"&gt;sendSms&lt;/a&gt;.&lt;/p&gt;&lt;p&gt;This is an alternative to the &lt;a href="#service-OneAPI/SMS/Notification"&gt;notification&lt;/a&gt; interface.&lt;/p&gt;</documentation>
+      <input message="tns:getSmsDeliveryStatusSoapIn" />
+      <output message="tns:getSmsDeliveryStatusSoapOut" />
+    </operation>
+    <operation name="sendSms">
+      <documentation>&lt;p&gt;Sends a &lt;abbr&gt;SMS&lt;/abbr&gt; message to one or more recipients. Optionally, it can notify an endpoint when there is a delivery state change.&lt;/p&gt;</documentation>
+      <input message="tns:sendSmsSoapIn" />
+      <output message="tns:sendSmsSoapOut" />
+    </operation>
+  </portType>
+  <binding name="SendSMSSoapSecure" type="tns:SendSMSSoapSecure">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" style="document" />
+    <operation name="getSmsDeliveryStatus">
+      <soap:operation soapAction="urn:oma:wsdl:pxprof:sms:1.0:send:interface:local/getSmsDeliveryStatus" style="document" />
+      <input>
+        <soap:header message="tns:ESBCredentialsSoapIn" part="ESBCredentials" use="literal" />
+        <soap:header message="tns:getSmsDeliveryStatusSoapInHeaders" part="ESBAccessKey" use="literal" wsdl:required="true" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" />
+        <soap:header message="tns:getSmsDeliveryStatusSoapInHeaders" part="ESBCorrelationId" use="literal" wsdl:required="false" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" />
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="sendSms">
+      <soap:operation soapAction="urn:oma:wsdl:pxprof:sms:1.0:send:interface:local/sendSms" style="document" />
+      <input>
+        <soap:header message="tns:ESBCredentialsSoapIn" part="ESBCredentials" use="literal" />
+        <soap:header message="tns:sendSmsSoapInHeaders" part="ESBAccessKey" use="literal" wsdl:required="true" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" />
+        <soap:header message="tns:sendSmsSoapInHeaders" part="ESBCorrelationId" use="literal" wsdl:required="false" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" />
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+  </binding>
+  <service name="SendSMS">
+    <documentation>&lt;p&gt;With this &lt;abbr&gt;API&lt;/abbr&gt; you can send &lt;abbr&gt;SMS&lt;/abbr&gt; messages to one or more recipients (eg. to mobile terminals).&lt;/p&gt;&lt;p&gt;This &lt;abbr&gt;API&lt;/abbr&gt; is based on the &lt;a href="http://gsmworld.com/oneapi/reference_documentation-version_1.html"&gt;OneAPI v1.0 SMS&lt;/a&gt; specification defined by &lt;a href="http://www.gsm.org/"&gt;&lt;abbr&gt;GSMA&lt;/abbr&gt;&lt;/a&gt; and implements the &lt;code&gt;OneAPI SendSms&lt;/code&gt; interface as a &lt;a href="http://www.w3.org/TR/2000/NOTE-SOAP-20000508/"&gt;SOAP 1.1&lt;/a&gt; service.&lt;/p&gt;</documentation>
+    <port name="SendSMSSoapSecure" binding="tns:SendSMSSoapSecure">
+      <soap:address location="https://services.sapo.pt/OneAPI/SMS/SendSMS" />
+    </port>
+  </service>
+</definitions>

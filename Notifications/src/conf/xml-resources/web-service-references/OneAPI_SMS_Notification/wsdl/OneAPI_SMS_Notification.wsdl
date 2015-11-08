@@ -1,0 +1,71 @@
+<definitions targetNamespace="urn:oma:wsdl:pxprof:sms:1.0:notification:local" xmlns="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="urn:oma:wsdl:pxprof:sms:1.0:notification:local" xmlns:esb="http://services.sapo.pt/definitions" xmlns:g1="urn:oma:wsdl:pxprof:sms:1.0:types" xmlns:mrkt0="http://services.sapo.pt/Metadata/Market">
+  <types>
+    <xsd:schema targetNamespace="urn:oma:wsdl:pxprof:sms:1.0:notification:local" elementFormDefault="qualified">
+      <xsd:import namespace="http://services.sapo.pt/definitions" schemaLocation="esbCredentials.xsd" />
+      <xsd:import namespace="http://services.sapo.pt/Metadata/Market" schemaLocation="Market.xsd" />
+      <xsd:import namespace="urn:oma:wsdl:pxprof:sms:1.0:types" schemaLocation="OneAPI_SMS_pxprof_sms_types.xsd" />
+      <xsd:element name="notifySmsDeliveryReceipt">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="correlator" type="xsd:string" minOccurs="1" maxOccurs="1" nillable="false">
+              <xsd:annotation>
+                <xsd:documentation xml:lang="en">&lt;p&gt;The opaque value sent by the client application (e.g. on the &lt;a href="#service-OneAPI/SMS/SendSMS-operation-sendSms"&gt;sendSms&lt;/a&gt; operation) is sent here as a callback context.&lt;/p&gt;</xsd:documentation>
+                <xsd:documentation xml:lang="pt">&lt;p&gt;O valor opaco enviado pela aplicação cliente (ex. na operação &lt;a href="#service-OneAPI/SMS/SendSMS-operation-sendSms"&gt;sendSms&lt;/a&gt;) é enviado aqui como um contexto de retorno.&lt;/p&gt;</xsd:documentation>
+              </xsd:annotation>
+            </xsd:element>
+            <xsd:element name="deliveryStatus" type="g1:DeliveryInformation" minOccurs="1" maxOccurs="1" nillable="false">
+              <xsd:annotation>
+                <xsd:documentation xml:lang="en">&lt;p&gt;The delivery status for a destination address.&lt;/p&gt;</xsd:documentation>
+                <xsd:documentation xml:lang="pt">&lt;p&gt;Indica o estado de entrega para um endereço de destino.&lt;/p&gt;</xsd:documentation>
+              </xsd:annotation>
+            </xsd:element>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="notifySmsDeliveryReceiptResponse">
+        <xsd:complexType>
+          <xsd:sequence />
+        </xsd:complexType>
+      </xsd:element>
+    </xsd:schema>
+  </types>
+  <message name="ESBCredentialsSoapIn">
+    <part name="ESBCredentials" element="esb:ESBCredentials" />
+  </message>
+  <message name="notifySmsDeliveryReceiptSoapIn">
+    <part name="parameters" element="tns:notifySmsDeliveryReceipt" />
+  </message>
+  <message name="notifySmsDeliveryReceiptSoapInHeaders">
+    <part name="ESBAccessKey" element="mrkt0:ESBAccessKey" />
+  </message>
+  <message name="notifySmsDeliveryReceiptSoapOut">
+    <part name="parameters" element="tns:notifySmsDeliveryReceiptResponse" />
+  </message>
+  <portType name="NotificationSoapSecure">
+    <operation name="notifySmsDeliveryReceipt">
+      <documentation>&lt;p&gt;Called to inform the delivery status of previously sent &lt;abbr&gt;SMS&lt;/abbr&gt; message (using the &lt;a href="#service-OneAPI/SMS/SendSMS-operation-sendSms"&gt;sendSms&lt;/a&gt; operation of the &lt;a href="#service-OneAPI/SMS/SendSMS"&gt;OneAPI/SMS/SendSMS&lt;/a&gt; service).&lt;/p&gt;</documentation>
+      <input message="tns:notifySmsDeliveryReceiptSoapIn" />
+      <output message="tns:notifySmsDeliveryReceiptSoapOut" />
+    </operation>
+  </portType>
+  <binding name="NotificationSoapSecure" type="tns:NotificationSoapSecure">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" style="document" />
+    <operation name="notifySmsDeliveryReceipt">
+      <soap:operation soapAction="urn:oma:wsdl:pxprof:sms:1.0:notification:local/notifySmsDeliveryReceipt" style="document" />
+      <input>
+        <soap:header message="tns:ESBCredentialsSoapIn" part="ESBCredentials" use="literal" />
+        <soap:header message="tns:notifySmsDeliveryReceiptSoapInHeaders" part="ESBAccessKey" use="literal" wsdl:required="true" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" />
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+  </binding>
+  <service name="Notification">
+    <documentation>&lt;p&gt;Short Messaging Service Notification Interface. This should be implemented by client applications of the &lt;a href="#service-OneAPI/SMS/SendSMS"&gt;OneAPI/SMS/SendSMS&lt;/a&gt; service. This is the interface that is used when delivering receipt notifications (when the &lt;a href="#entity-type-OneAPI/SMS/SendSMS-SimpleReference"&gt;interfaceName&lt;/a&gt;  is "soap").&lt;/p&gt;</documentation>
+    <port name="NotificationSoapSecure" binding="tns:NotificationSoapSecure">
+      <soap:address location="https://services.sapo.pt/OneAPI/SMS/Notification" />
+    </port>
+  </service>
+</definitions>

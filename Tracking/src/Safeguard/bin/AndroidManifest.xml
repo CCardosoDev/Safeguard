@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="pt.ua.engserv.safeguard"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="18" />
+
+    <application
+        android:allowBackup="true"
+        android:clearTaskOnLaunch="true"
+        android:icon="@drawable/ic_logo"
+        android:label="@string/app_name"
+        android:launchMode="singleTask"
+        android:stateNotNeeded="true"
+        android:theme="@android:style/Theme.Holo.NoActionBar" >
+
+        <!-- <activity -->
+        <!-- android:name="pt.ua.engserv.safeguard.ActivityMain" -->
+        <!-- android:label="@string/app_name" > -->
+        <!-- <intent-filter> -->
+        <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+        <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+        <!-- </intent-filter> -->
+        <!-- </activity> -->
+
+        <activity
+            android:name="pt.ua.engserv.safeguard.ActivityMain"
+            android:configChanges="keyboardHidden"
+            android:excludeFromRecents="true"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:theme="@style/Theme.TranslucentActionBar.ActionBar.Overlay" >
+        </activity>
+
+        <activity-alias
+            android:name="pt.ua.engserv.safeguard.LauncherAlias1"
+            android:targetActivity=".ActivityMain" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.HOME" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity-alias>
+        <activity-alias
+            android:name="pt.ua.engserv.safeguard.LauncherAlias2"
+            android:enabled="false"
+            android:targetActivity=".ActivityMain" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.HOME" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity-alias>
+
+        <service
+            android:name="pt.ua.engserv.safeguard.gps.ServiceTracker"
+            android:enabled="true"
+            android:exported="true" >
+        </service>
+
+        <activity
+            android:name="pt.ua.engserv.safeguard.parental.ActivityLauncherWarning"
+            android:label="@string/title_activity_activity_launcher_warning" >
+        </activity>
+        <activity
+            android:name="pt.ua.engserv.safeguard.settings.ActivityPackagesSelector"
+            android:label="@string/title_activity_activity_packages_selector" >
+        </activity>
+        <activity
+            android:name="pt.ua.engserv.safeguard.settings.ActivitySettings"
+            android:label="@string/title_activity_activity_settings"
+            android:parentActivityName="pt.ua.engserv.safeguard.ActivityMain" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="pt.ua.engserv.safeguard.ActivityMain" />
+        </activity>
+
+        <receiver
+            android:name="pt.ua.engserv.safeguard.GcmBroadcastReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND" >
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+
+                <category android:name="pt.ua.engserv.safeguard" />
+            </intent-filter>
+        </receiver>
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity
+            android:name="pt.ua.engserv.safeguard.ActivityLogin"
+            android:label="@string/title_activity_activity_login" >
+        </activity>
+        <activity
+            android:name="pt.ua.engserv.safeguard.ActivityLauncher"
+            android:label="@string/title_activity_activity_launcher" >
+        </activity>
+
+        <service android:name="pt.ua.engserv.safeguard.GcmIntentService" >
+        </service>
+
+        <activity
+            android:name="pt.ua.engserv.safeguard.parental.ActivityLock"
+            android:label="@string/title_activity_activity_lock" >
+        </activity>
+        <activity
+            android:name="pt.ua.engserv.safeguard.CameraTest"
+            android:label="@string/title_activity_camera_test" >
+        </activity>
+
+        <service
+            android:name="pt.ua.engserv.safeguard.camera.CameraService"
+            android:enabled="true"
+            android:exported="true" >
+        </service>
+
+        <activity
+            android:name="pt.ua.engserv.safeguard.camera.ActivityCamera"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_activity_camera" >
+        </activity>
+        <activity
+            android:name="pt.ua.engserv.safeguard.parental.ActivityPoke"
+            android:label="@string/title_activity_activity_poke"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="pt.ua.engserv.safeguard.parental.config.ActivityWelcome"
+            android:label="@string/title_activity_activity_welcome"
+            android:theme="@android:style/Theme.Holo" >
+        </activity>
+        <activity
+            android:name="pt.ua.engserv.safeguard.parental.config.ActivityPinSet"
+            android:label="@string/title_activity_activity_pin_set" >
+        </activity>
+        <activity
+            android:name="pt.ua.engserv.safeguard.parental.config.ActivitySetupComplete"
+            android:label="@string/title_activity_activity_setup_complete" >
+        </activity>
+        <activity
+            android:name="pt.ua.engserv.safeguard.ActivityApps"
+            android:label="@string/title_activity_activity_apps"
+            android:parentActivityName="pt.ua.engserv.safeguard.ActivityMain"
+            android:theme="@style/Theme.TranslucentActionBar.ActionBar" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="pt.ua.engserv.safeguard.ActivityMain" />
+        </activity>
+        <activity
+            android:name="pt.ua.engserv.safeguard.ActivityRecentApps"
+            android:label="@string/title_activity_activity_recent_apps" >
+        </activity>
+        <activity
+            android:name="pt.ua.engserv.safeguard.TestActivity"
+            android:label="@string/title_activity_test" >
+        </activity>
+    </application>
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+
+    <permission
+        android:name="pt.ua.engserv.safeguard.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="pt.ua.engserv.safeguard.permission.C2D_MESSAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <uses-feature android:name="android.hardware.camera.flash" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.REORDER_TASKS" />
+
+</manifest>

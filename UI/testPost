@@ -1,0 +1,38 @@
+calendarToken :AcWsmyBWTZDpPUFcgciou6
+geoRefToken :hyE436heZL4RkFXvREBoLF
+coordinates :Array
+(
+    [0] => Array
+        (
+            [latitude] => 41.116607320129
+            [longitude] => -10.207071304321
+        )
+
+    [1] => Array
+        (
+            [latitude] => 40.354916750791
+            [longitude] => -10.218057632446
+        )
+
+    [2] => Array
+        (
+            [latitude] => 40.279525668813
+            [longitude] => -9.6632480621338
+        )
+
+    [3] => Array
+        (
+            [latitude] => 40.851215574282
+            [longitude] => -9.3226718902588
+        )
+
+    [4] => Array
+        (
+            [latitude] => 41.116607320129
+            [longitude] => -10.207071304321
+        )
+
+)
+
+fenceId :33
+requestData{"event":{"summary":"asdd","description":"aa","dtstart":{"day":"02","month":"12","year":"2013","hour":"23","minute":"43","second":"00","timezone":"WET"},"duration":{"week":"0","day":"0","hour":"23","minute":"43"},"rrule":{"count":"123","interval":"1","freq":"daily","byday":"MO,WE,FR,SU"},"location":"33"}}

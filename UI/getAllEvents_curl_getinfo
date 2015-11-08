@@ -1,0 +1,60 @@
+{
+  "eventList": {
+    "105": [
+      {
+        "description": "asd",
+        "dtstart": {
+          "day": "02",
+          "hour": "23",
+          "minute": "37",
+          "month": "12",
+          "second": "00",
+          "timezone": "WET",
+          "year": "2013"
+        },
+        "duration": {
+          "day": "0",
+          "hour": "23",
+          "minute": "37",
+          "week": "0"
+        },
+        "location": "32",
+        "rrule": {
+          "byday": "MO,WE",
+          "count": "1",
+          "freq": "DAILY",
+          "interval": "1"
+        },
+        "summary": "asd",
+        "uid": "20131202T234449Z-26930@safeguard"
+      },
+      {
+        "description": "aa",
+        "dtstart": {
+          "day": "02",
+          "hour": "23",
+          "minute": "43",
+          "month": "12",
+          "second": "00",
+          "timezone": "WET",
+          "year": "2013"
+        },
+        "duration": {
+          "day": "0",
+          "hour": "23",
+          "minute": "43",
+          "week": "0"
+        },
+        "location": "33",
+        "rrule": {
+          "byday": "MO,WE,FR,SU",
+          "count": "123",
+          "freq": "DAILY",
+          "interval": "1"
+        },
+        "summary": "asdd",
+        "uid": "20131202T234548Z-86999@safeguard"
+      }
+    ]
+  }
+}
